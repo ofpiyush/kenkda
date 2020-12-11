@@ -52,3 +52,29 @@ I will continue this till I either learn the language or I get bored and drop it
 - Why does autocomplete not trigger for a few things in VSCode. Is there a lot of language magic or does the extension suck?
 - And there's this thing called `match` too. This language is heavy on enum and pattern matching, interesting!
 - Ok I really need to take a break now.
+
+### Day 2
+
+- I was tired by the end of day 1 so a little recap might be in order.
+- They have `cargo doc --open` for exactly the things you use? Neat!
+- Surprise, surprise! It [doesn't work with WSL](https://github.com/rust-lang/cargo/issues/7557).
+- They purposefully led you to an error to talk about errors, what to expect and how to read them!
+- Errors and their handling are a feature.
+- Not a big fan of shortening type names, but I guess I'll get used to it.
+- They let you shadow variable names of different types. That's simultaneously super neat and super scary.
+- There seems to be a tendency to fail at the call itself with `expect`, would be interesting to see how they'd teach cleaner error handling later.
+- I keep feeling this trend of "show them a bad easy way to do it, later teach them a cleaner way", I suspect some people would google stuff, land here, read the bad examples in isolation and do that because "the book told them to".
+- I didn't make a separate directory for the guessing game last time, I'll do that now and just remake the game.
+- First try 😎
+  ```
+  Guessing game!!
+  Guess the number:
+  10
+  Got em!
+  ```
+- I had to play again to confirm I hadn't written bad code. 😅
+- So we we `loop`, but isn't this infinite? How do we break out of the loop though?
+- Ha! with `break`;
+- Error handling is also through the pattern `match`, aaaand match is an expression!
+- `_` is to catch all error values, does this mean I can match multiple types of errors based on value/type? 😲
+- Gotta go work!
