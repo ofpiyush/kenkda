@@ -78,3 +78,28 @@ I will continue this till I either learn the language or I get bored and drop it
 - Error handling is also through the pattern `match`, aaaand match is an expression!
 - `_` is to catch all error values, does this mean I can match multiple types of errors based on value/type? 😲
 - Gotta go work!
+
+## Day 3
+
+- The flow they've gone with so far:
+  - unavoidable install step
+  - basic example for first easy win
+  - syntax and structure early
+  - tooling next
+  - break down an involved example into incremental wins and buy in.
+  - use each increment to intro more concepts.
+  - teach through mistakes.
+  - errors are a feature/tool to teach.
+  - Then start with the actual basic concepts.
+- The first thing they go back to is variables, immutability and constants.
+- The book feels like it is written for people who know how to code and might get tripped up by some concepts, so they keep going back to those to help! :)
+- The example of shadowing also introduces the idea of how you can use shadowing to do more ops on a variable but still get an immutable result.
+- I miss real static typing 😭
+- Overflow panic in dev, not in release. I wonder why they'd do that?
+  - They call out behaviour that stands out of the ordinary frequently.
+- They frequently reference the specific standard they conform to, it helps set the right expectations and build a mental model around the language.
+- single quote for `char`, double quote for `string`
+- 4 byte chars!!! `'😻'`
+- Both tuples and arrays. They went with a very broad set of language constructs.
+  - Rust caters very squarely to the "power user".
+- Time to freshen up for work!
