@@ -103,3 +103,19 @@ I will continue this till I either learn the language or I get bored and drop it
 - Both tuples and arrays. They went with a very broad set of language constructs.
   - Rust caters very squarely to the "power user".
 - Time to freshen up for work!
+
+## Day 4
+
+- Are rust vectors like slices from go?
+- `snake_case` functions, throwback to [python days](https://www.python.org/dev/peps/pep-0008/#function-and-variable-names)!
+- Everything is not an expression, interesting!
+- Block statements can be used as expressions! 😲
+- Last line of a block statement without a semi-colon acts like the return of a function expression? Uggh.
+  - They introduced this before they introduced the `return` expression.
+- `let x = if condition {5} else {6};`
+- `loop`, `while` and `for`, why?
+  - break out of a loop with a `break` and add an expression after it to act as a return for the block expressions. 😲
+  - while is when you want conditions with your loop, but there's break for it too.
+  - for is when you want to iterate over a collection.
+- Collections have methods on them like `.iter` and `.rev`
+- Off to work!
