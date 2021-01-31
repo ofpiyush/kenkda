@@ -119,3 +119,31 @@ I will continue this till I either learn the language or I get bored and drop it
   - for is when you want to iterate over a collection.
 - Collections have methods on them like `.iter` and `.rev`
 - Off to work!
+
+## Day 5
+
+- Long break since the last one!
+- Tried to do a recap from before, found a fun gotcha. Guess what happens when you run this?
+  ```rust
+  let x = 5;
+  let y = loop {
+    let x = x + 1;
+    if x > 10 {
+      break x * 2
+    }
+  };
+  println!("x = {}, y = {}", x, y);
+  ```
+  [See for yourself!](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e13a270788e76005aed27a4680a7f64f)
+  This is because the x in the third line is still the same x from outside. Shadowing can get confusing, beware :)
+- Their description of stack and heap is one of the best ones I've seen in a while.
+- Single owner principle might just be the biggest thing Rust has made mainstream.
+- And dropping values when owner goes out of scope. _chef's kiss_
+- string on the stack, String on the heap.
+- Difference of behaviour of same operation between types on the stack and types that point to the heap is an implementation detail leak. 👎
+  - Would it be better to force the same behaviour?
+  - I don't understand why they couldn't use a ref counter instead of ref counting?
+  - Why copy and invalidate when you can pretty much rename?
+  - They must have had some good reason. Todo: find out later
+- Borrow and give back is a nice physical world thing to add here :)
+- Good first day after a long hiatus from this. Off to read sth else!
